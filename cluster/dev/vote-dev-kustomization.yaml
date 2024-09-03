@@ -5,6 +5,8 @@ metadata:
   name: vote-dev
   namespace: flux-system
 spec:
+  dependsOn:
+  - name: redis-dev
   healthChecks:
   - kind: Deployment
     name: vote
